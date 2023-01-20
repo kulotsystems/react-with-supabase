@@ -23,8 +23,7 @@ function App() {
 
     const login = async () => {
         const { data, error } = await supabase.auth.signInWithOAuth({
-            provider: 'github',
-            redirectTo: window.location.origin
+            provider: 'github'
         });
     };
 
