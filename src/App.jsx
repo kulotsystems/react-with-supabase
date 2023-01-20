@@ -29,7 +29,7 @@ function App() {
     };
 
     const logout = async () => {
-        const { data, error } = await supabase.auth.signOut();
+        const { error } = await supabase.auth.signOut();
         setUser(null);
     };
 
